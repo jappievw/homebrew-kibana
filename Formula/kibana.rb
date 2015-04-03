@@ -4,6 +4,8 @@ class Kibana < Formula
   url "https://download.elasticsearch.org/kibana/kibana/kibana-4.0.2-darwin-x64.tar.gz"
   sha1 "ce6136d826cf8ac1da71abea419f2f5220055933"
 
+  depends_on "elasticsearch"
+
   def install
     rm_f Dir["bin/*.bat"]
 
