@@ -6,6 +6,8 @@ class Kibana < Formula
 
   depends_on "elasticsearch"
 
+  head "http://download.elastic.co/kibana/kibana/kibana-4.1.0-snapshot-darwin-x64.tar.gz"
+
   def install
     rm_f Dir["bin/*.bat"]
 
