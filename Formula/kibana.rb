@@ -1,12 +1,12 @@
 class Kibana < Formula
   homepage "https://www.elastic.co/products/kibana"
-  version "4.0.2"
-  url "https://download.elasticsearch.org/kibana/kibana/kibana-4.0.2-darwin-x64.tar.gz"
-  sha1 "ce6136d826cf8ac1da71abea419f2f5220055933"
+  version "4.3.0"
+  url "https://download.elastic.co/kibana/kibana/kibana-4.3.0-darwin-x64.tar.gz"
+  sha1 "ba16b784eeab7fbd96367eb3f8e441812f83f7b6"
 
   depends_on "elasticsearch"
 
-  head "http://download.elastic.co/kibana/kibana/kibana-4.1.0-snapshot-darwin-x64.tar.gz"
+  head "http://download.elastic.co/kibana/kibana-snapshot/kibana-5.0.0-snapshot-darwin-x64.tar.gz"
 
   def install
     rm_f Dir["bin/*.bat"]
